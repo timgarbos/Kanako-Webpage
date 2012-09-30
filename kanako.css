@@ -1,0 +1,87 @@
+body
+{
+	background-color:#550099;	
+}
+
+.white
+{
+	background-color:#ffffff;	
+}
+
+.blue
+{
+	background-color:#D19DEB;	
+}
+
+.margin
+{
+	margin: 15px;
+	
+}
+
+h1 a
+{
+font-size:2.5em;
+color:#ffffff;
+text-decoration:none;
+	
+}
+h1, h2, h3, h4
+{
+	font-family: 'Arbutus Slab', serif;
+}
+h3
+{
+	margin-bottom:0.50em;
+}
+
+.content
+{
+	background-color:#ffffff;	
+	padding:10px;
+	
+}
+
+.mainmenu-item
+{
+		
+	margin-top:4.5em;
+
+}
+.mainmenu-item a
+{
+
+	color:#ffffff;
+	text-decoration:none;
+	font-family: 'Arbutus Slab', serif;
+	font-size:2.0em;
+	
+
+
+}
+a
+{
+	text-decoration:none;
+}
+
+.center
+{
+	text-align:center;
+}
+
+.project
+{
+	float:left;
+	margin-right: 45px;
+	width:196px;
+}
+
+.projectlast
+{
+	margin-right: 0;
+}
+
+body 
+{
+	margin-bottom:30px;
+}

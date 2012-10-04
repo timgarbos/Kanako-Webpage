@@ -1,11 +1,16 @@
 body
 {
 	background-color:#550099;	
+	background-image:url('bg4.png');
 }
 
 .white
 {
 	background-color:#ffffff;	
+}
+.font-white
+{
+	color:#ffffff;
 }
 
 .blue
@@ -85,3 +90,77 @@ body
 {
 	margin-bottom:30px;
 }
+
+
+
+/*
+	Slideshow
+*/
+
+#slides {
+
+	z-index:100;
+}
+
+/*
+	Slides container
+	Important:
+	Set the width of your slides container
+	Set to display none, prevents content flash
+*/
+
+.slides_container {
+	width:920px;
+	overflow:hidden;
+	position:relative;
+	display:none;
+	margin-left:15px;
+}
+
+/*
+	Each slide
+	Important:
+	Set the width of your slides
+	If height not specified height will be set by the slide content
+	Set to display block
+*/
+
+.slides_container div.slide {
+	width:920px;
+	height:270px;
+	display:block;
+}
+
+
+/*
+	Caption
+*/
+
+.caption {
+	z-index:500;
+	position:absolute;
+	bottom:-35px;
+	left:0;
+	height:30px;
+	padding:5px 20px 0 20px;
+	background:#000;
+	background:rgba(0,0,0,.3);
+	width:920px;
+	font-size:1.3em;
+	line-height:1.33;
+	color:#fff;
+	text-shadow:none;
+}
+
+.right
+{
+	float:right;
+	clear:none;
+}
+
+.right
+{
+	float:left;
+	clear:none;
+}
+

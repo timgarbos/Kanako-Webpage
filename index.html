@@ -14,24 +14,65 @@
  
  	<link rel="stylesheet" href="/kanako.css" type="text/css" media="screen, projection">
  	<link href='http://fonts.googleapis.com/css?family=Arbutus+Slab' rel='stylesheet' type='text/css'>
+ 	
+ 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6/jquery.min.js"></script>
+	<script src="slides.min.jquery.js"></script>
+	<script>
+		$(function(){
+			$('#slides').slides({
+				pagination: false,
+				generatePagination: false,
+				preload: true,
+				preloadImage: 'loading.gif',
+				play: 5000,
+				pause: 2500,
+				slideSpeed: 750,
+				hoverPause: true,
+				animationStart: function(current){
+					$('.caption').animate({
+						bottom:-35
+					},200);
+					if (window.console && console.log) {
+						// example return of current slide number
+						console.log('animationStart on slide: ', current);
+					};
+				},
+				animationComplete: function(current){
+					$('.caption').animate({
+						bottom:0
+					},200);
+					if (window.console && console.log) {
+						// example return of current slide number
+						console.log('animationComplete on slide: ', current);
+					};
+				},
+				slidesLoaded: function() {
+					$('.caption').animate({
+						bottom:0
+					},200);
+				}
+			});
+		});
+	</script>
+
+
+
 
 </head>
 <body>
 <div class="container prepend-top">
 
 <div class="span-24">
-<div class="span-16">
+<div class="span-10">
     <h1><a name="kanako" href="#kanako">Kanako</a></h1>
 
  </div>
 
 
-    <div class="span-4 mainmenu-item">
-   		<a href="#projects" alt="projects" >Projects </a>
-   	</div>
-   	
-    <div class="span-4 last mainmenu-item">
-   		<a href="#about" alt="submit" >About </a>
+    <div class="span-10 mainmenu-item">
+    <h2 class="font-white">
+   		Interaction and games
+   		</h2>
    	</div>
   
 </div>
@@ -39,66 +80,123 @@
 <div class="span-24 content">
  
 <div class="span-24 center prepend-top">
-<img src="top.png" width="920"/>
+	<div id="slides">
+				<div class="slides_container">
+					<div class="slide center">
+						<img src="top.png" width="920" alt="Slide 1">
+						<!--<div class="caption" style="bottom:0">
+							<p>Happy Bokeh Thursday!</p>
+						</div>-->
+					</div>
+				</div>
+				
+				<div class="slides_container">
+					<div class="slide center">
+						<img src="top.png" width="920" alt="Slide 2">
+						<!--<div class="caption" style="bottom:0">
+							<p>SDlsdkfjlsdkfjlkk!</p>
+						</div>-->
+					</div>
+				</div>
+				
+				<div class="slides_container">
+					<div class="slide center">
+						<img src="top.png" width="920" alt="Slide 3">
+						<!--<div class="caption" style="bottom:0">
+							<p>SDlsdkfjlsdkfjlkk!</p>
+						</div>-->
+					</div>
+				</div>
+	</div>
 </div>
 
-<div class="span-24">
+<div class="span-24 prepend-top">
 <div class="margin">
-<h2><a name="projects">Featured projects</a></h2>
 
 <div class="project">
+<h2> Games</h2>
+<!--<img src="farmor.png" width="100%"/>-->
 
-<img src="farmor.png" width="100%"/>
-<h3> Farmors baghave</h3>
 <p>
-Short description
+We have a background in games and have earlier worked on everything from first person shooters to puzzle games for children.
+<ul>
+<li> Mobile games</li>
+<li> Browser games</li>
+<li> Multiplayer games</li>
+<li> Simulations</li>
+</ul>
 </p>
 </div>
 
 <div class="project">
-
-<img src="farmor.png" width="100%"/>
-<h3> Farmors baghave</h3>
+<h2> Prototyping</h2>
+<!--<img src="farmor.png" width="100%"/>-->
+Projects ranging from physics based character animation to projection content for theatre performances. <br><br>
 <p>
-Short description
+
+<ul>
+<li> Proof of concepts</li>
+<li> Custom input/hardware</li>
+<li> Visualizations</li>
+
+</ul>
 </p>
 </div>
-
 
 <div class="project">
-
-<img src="farmor.png" width="100%"/>
-<h3> Farmors baghave</h3>
+<h2> Installations</h2>
+<!--<img src="farmor.png" width="100%"/>-->
 <p>
-Short description
+We have worked on museum installations, interactive art installations, large touch screen applications.
+
+<ul>
+
+<li> Touch interfaces</li>
+<li> Motion sensors/tracking</li>
+<li> Locationbased</li>
+<li> RFID</li>
+</ul>
 </p>
 </div>
-
 
 <div class="project projectlast">
-
-<img src="farmor.png" width="100%"/>
-<h3> Farmors baghave</h3>
+<h2> Engineering</h2>
+<!--<img src="farmor.png" width="100%"/>-->
 <p>
-Short description
+We have done projects ranging from embedded hardware sensors to LED dresses for dancers.<br><br>
+
+<ul>
+
+<li> Embedded systems</li>
+<li> Electronics</li>
+<li> Data visualization</li>
+</ul>
 </p>
 </div>
 
+
 <div class="span-24  prepend-top">
-<h3><a name="projects2">Other projects</a></h3>
-Exile, jams, installation and so on.
 
 <div class="span-24">
 
 <h2><a name="about">About</a></h2>
+<div class="left">
 <p>
-Kanako is blabla.
- 
- We are doing blablabla
+Kanako is small studio established to bringing technology and ideas from games into interactive experiences and other industries.<br><br>
+Besides development we are also involved in organizing events for developers such as <a href="http://exile.dk"> Exile Game Jam </a> and teaching for fx <a href="http://dadiu.dk">DADIU</a>
 
-<br/>
-    Catch us at <a href="mailto://us@kanako.dk">us@kanako.dk</a>
+</p>
+</div>
+<div class="right margin" style="margin-top:0;">
+<p class="quiet margin" style="margin-top:0;">
+   Samosvej 12b<br>
+2300 København S<br>
+<a href="mailto://us@kanako.dk">us@kanako.dk</a><br>
++45 61 62 75 01 <br>
+CVR: 33 52 82 72
    </p>
+   
+   </div>
 
 </div>
 </div>

@@ -35,6 +35,13 @@ h1, h2, h3, h4
 {
 	font-family: 'Arbutus Slab', serif;
 }
+
+h2
+{
+	margin-bottom:0.00em;
+}
+
+
 h3
 {
 	margin-bottom:0.50em;
@@ -60,10 +67,8 @@ h3
 	text-decoration:none;
 	font-family: 'Arbutus Slab', serif;
 	font-size:2.0em;
-	
-
-
 }
+
 a
 {
 	text-decoration:none;
@@ -77,8 +82,8 @@ a
 .project
 {
 	float:left;
-	margin-right: 45px;
-	width:196px;
+	margin-right: 15px;
+	width:218px;
 }
 
 .projectlast
@@ -91,6 +96,10 @@ body
 	margin-bottom:30px;
 }
 
+li
+{
+	font-weight: bold;
+}
 
 
 /*
